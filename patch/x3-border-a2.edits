@@ -1,0 +1,6 @@
+# Rockman X3 (Japan) Saturn, T-1210G V1.001, Track 01. Border layer NBG0 to a black palette page.
+# Use: python3 tools/cdpatch.py apply patch/x3-border-a2.edits "<Track 01>.bin" "<patched Track 01>.bin"
+# Site: 0X3_SS.BIN (load 0x06010000), function 0x060348F0, second NBG0-field clear of the CRAOFA copy 0x06041B58:
+#   0x06034A08 extu.w r2,r2 ; and r13,r2   (r13 = 0x0000FFF0)  ->  and r13,r2 ; add #1,r2
+track 1ef3da9f377899ec9b5edab51c6150ddbe3909b0
+edit 0X3_SS.BIN 0x24A08 a30854a072182671ce938a89ae89aa399f8eadd8 622D22D9 22D97201

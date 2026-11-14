@@ -1,0 +1,48 @@
+Rockman X3 (Japan) Saturn border patch A2: checksums
+
+Source file (the input to the patch)
+  Name:   Rockman X3 (Japan) (2M) (Track 01).bin
+  Size:   205106160 bytes (87205 sectors of 2352 bytes, MODE1/2352)
+  CRC32:  8030be91
+  MD5:    47ec4d19ce8826ba541d29b4d031bebd
+  SHA-1:  1ef3da9f377899ec9b5edab51c6150ddbe3909b0
+
+Patched file (the output of the patch)
+  Name:   Rockman X3 (Japan) (2M) (Track 01).bin
+  Size:   205106160 bytes
+  CRC32:  d9b4d350
+  MD5:    175bf935a2ba9c080a37515c5232943e
+  SHA-1:  4d23bb9aefeafc14a94dec869b20a000bcc19c5b
+
+Cue sheet (not changed by the patch)
+  Name:   Rockman X3 (Japan) (2M).cue
+  Size:   3663 bytes
+  SHA-1:  3ea3f55e2d615d748ebb87e4cf6d83ff0b59f6d5
+
+Patch files (each one gives the same patched file)
+  Name:   x3-border-a2.bps
+  Size:   225 bytes
+  CRC32:  2144df1c
+  MD5:    458e0d83e33f1fc118d0a2460c48ff7e
+  SHA-1:  0d8dc0f6b8d5f5f1f3fc72c78372ae3232f060e1
+
+  Name:   x3-border-a2.ips
+  Size:   132 bytes
+  CRC32:  e3487bf7
+  MD5:    5b863042349e18b7bf66ba0449e5713e
+  SHA-1:  732a28815b0189c549374497fc9a8166e4cd910e
+
+  Name:   x3-border-a2.xdelta
+  Size:   1041 bytes
+  CRC32:  c950294f
+  MD5:    e5324d10706f2b088e8d563346b6c490
+  SHA-1:  376dee47a710da90361ad81d61fa3fd9235ca53d
+
+Program file inside Track 01 (for reference)
+  0X3_SS.BIN SHA-1 before: a30854a072182671ce938a89ae89aa399f8eadd8
+  0X3_SS.BIN SHA-1 after:  06c0ba4db5122c35e42663b5863b5c46f9feaefb
+
+Method: Python hashlib and zlib.crc32 over the full files, 2026-11-15.
+Each patch (BPS, IPS, xdelta) applied to the source file gives a file equal to the patched file (byte compare).
+xdelta: made with xdelta3 3.2.2, `-e -9 -S none` (no secondary compression).
+
